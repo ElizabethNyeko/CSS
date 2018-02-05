@@ -1,0 +1,189 @@
+body {
+  margin: 0.5%;
+  padding: 1%;
+}
+
+/*INITIAL S
+  TATE
+
+  background-image: url("https://www.walldevil.com/wallpapers/h11/underwater-wallpaper-seductive-world-fresh-scene-desktop-beach-wallpapers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px #ffffff solid;
+  position: relative;
+  height: 540px;
+  width: 900px;
+}
+}
+.spongebob:hover
+  */
+
+.sea {
+  background-image: url("https://www.walldevil.com/wallpapers/h11/underwater-wallpaper-seductive-world-fresh-scene-desktop-beach-wallpapers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px #ffffff solid;
+  position: relative;
+  height: 540px;
+  width: 900px;
+  transition: 1s;
+}
+
+#spongebob {
+  position: absolute;
+  float: right;
+  bottom: 0;
+  right: 10px;
+  display: inline-block;
+  content: url("images/jariet.png");
+  background-size: 200px;
+  width: 250px;
+  height: 300px;
+  transition: 2s ease;
+}
+
+#decrab {
+  position: absolute;
+  float: left;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  bottom: 10px;
+  left: 10px;
+  background-repeat: no-repeat;
+  content: url("images/sebastian1.png");
+  background-size: 200px;
+}
+
+p {
+  display: inline-block;
+  position: absolute;
+  color: #ffffff;
+  margin-top: 25%;
+  font-family: fantasy;
+  font-size: 70px;
+  text-transform: uppercase;
+  width: 850px;
+  text-align: center;
+}
+
+#bubble {
+  content: url("images/bubbles.png");
+  visibility: hidden;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  transition: 10s ease;
+}
+
+#jariet {
+  content: url("images/spongebob.png");
+  display: inline-block;
+  visibility: hidden;
+  position: absolute;
+  bottom: 50px;
+  left: 500px;
+  width: 100px;
+  height: auto;
+  transition: 4s ease;
+}
+
+/*FINAL STATE*/
+
+.sea:hover>#bubble {
+  visibility: visible;
+  -webkit-transform: translatey(-1000px);
+  -moz-transform: translatey(-1000px);
+  -o-transform: translatey(-1000px);
+  transform: translatey(-1000px);
+  transition-delay: 10s;
+}
+
+.sea:hover>#jariet {
+  visibility: visible;
+  -webkit-transform: rotate3d(-1, 2, 1, 360deg);
+  -moz-transform: rotate3d(-1, 2, 1, 360deg);
+  -o-transform: rotate3d(-1, 2, 1, 360deg);
+  transform: rotate3d(-1, 2, 1, 360deg);
+  transition-delay: 20s;
+}
+
+.sea:hover {
+  background-image: url("images/sea2.jpg");
+  transition-delay: 26s;
+}
+
+.sea:hover>#decrab {
+  animation-name: swim;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes swim {
+  0% {
+    bottom: 10px;
+    left: 10px;
+  }
+  15% {
+    -webkit-transform: translate(200px, -50px);
+    -moz-transform: translate(200px, -50px);
+    -o-transform: translate(200px, -50px);
+    -ms-transform: translate(200px, -50px);
+    transform: translate(200px, -50px);
+  }
+  30% {
+    -webkit-transform: translate(400px, 80px);
+    -moz-transform: translate(400px, 80px);
+    -o-transform: translate(400px, 80px);
+    -ms-transform: translate(400px, 80px);
+    transform: translate(400px, 80px);
+  }
+  45% {
+    -webkit-transform: translate(600px, -60px);
+    -moz-transform: translate(600px, -60px);
+    -o-transform: translate(600px, -60px);
+    -ms-transform: translate(600px, -60px);
+    transform: translate(600px, -60px);
+  }
+  60% {
+    -webkit-transform: rotatey(180deg);
+    -moz-transform: rotatey(180deg);
+    -o-transform: rotatey(180deg);
+    -ms-transform: rotatey(180deg);
+    transform: rotatey(180deg);
+
+  70% {
+      background-image: url("images/seb.png");
+  }
+  75% {
+      background-image: url("images/seb3.png");
+  }
+  80%{
+      background-image: url("images/sebastian1.png");
+  }
+    100% {
+          -webkit-transform: translate(-800px, -50px);
+      -moz-transform: translate(-800px, -50px);
+      -o-transform: translate(-800px, -50px);
+      -ms-transform: translate(-800px, -50px);
+      transform: translate(-800px, -50px);
+    }
+  }
+
+/*.sea:hover {
+  background-image: url("images/sea3.jpg");
+  transition-delay: 30s;
+}
+
+.sea:hover {
+  background-image: url("images/reef-shark-wwf.jpg");
+  transition-delay: 65s;
+}
+
+.sea:hover {
+  background-image: url("images/sea.jpg");
+  transition-delay: 70s;
+}*/
