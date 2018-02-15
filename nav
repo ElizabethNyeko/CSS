@@ -1,0 +1,37 @@
+ody {
+  background-color: #F2F2F2;
+  margin: 1%;
+  padding: 1%;
+}
+
+nav {
+  display: inline-block;
+  background-color: #40E0D0;
+  margin-right: 15px;
+    box-sizing: border-box;
+  border: 1px solid #00CED1;
+  height: 100vh;
+  width: 20%;
+  min-width: 125px;
+  overflow: auto;
+  color: #06425C;
+}
+
+nav a {
+  display: block;
+  line-height: 45px;
+  height: 45px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 50px;
+  	margin:10px 0 10px 5px;
+
+}
+
+section {
+  display: inline-block;
+  height: 100vh;
+  width: 70%;
+  min-width: 250px;
+  overflow: auto;
+}
